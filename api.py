@@ -78,8 +78,8 @@ def play_video():
 
 @app.get("/metrics")
 def metrics():
-    env = gym.make("LunarLander-v2")
 
+    env = gym.make("LunarLander-v3")
     rewards = []
 
     for _ in range(10):  # 10 runs pour stats
